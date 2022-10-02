@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
     //cout << inputString << endl;
     lexer->Run(inputString);
     cout << *lexer;
-    cout << endl;
+   
 
     in.close();
 
