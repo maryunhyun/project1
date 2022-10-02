@@ -73,8 +73,11 @@ void StringAutomaton::S2(const std::string& input) {
         }
         inputRead++;
         index++;
-        if (input[index] != EOF) {
-            S1(input);
+        if (input[index] == EOF) {
+            Serr();
+        }
+        else if (input[index] != EOF) {
+            S2(input);
         }
     }
     else if (input[index] == '\'') {
