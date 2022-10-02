@@ -71,7 +71,7 @@ string Lexer::toString() {
     for (int i = 0; i < tokensSize; i++) {
         output << tokens[i]->toString();
     }
-    output << "Total Tokens = " << tokensSize << endl;
+    output << "Total Tokens = " << tokensSize;
     string testing = output.str();
     return output.str();
 }
