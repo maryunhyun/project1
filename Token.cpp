@@ -12,11 +12,11 @@ Token::Token(TokenType type, string description, int line) {
 }
 
 string Token::toString() {
-   ostringstream finalString;
-   string enumString = enumToString();
-   finalString << "(" << enumString << ",\"" << this->description << "\"," << this->line << ")" << endl;
+    ostringstream finalString;
+    string enumString = enumToString();
+    finalString << "(" << enumString << ",\"" << this->description << "\"," << this->line << ")" << endl;
 
-   return finalString.str();
+    return finalString.str();
 }
 
 string Token::enumToString() {
